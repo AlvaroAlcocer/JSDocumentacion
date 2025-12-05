@@ -82,3 +82,80 @@ for (i=10; i>=0; i--){
 for (let i = 1; i <= 10; i++) {
   console.log(`5 x ${i} = ${5 * i}`);
 }
+
+/////////////////////////////////////////////////////
+
+//1.-Contador simple: Usa un bucle for para imprimir los números del 1 al 10, cada uno en una línea.
+for (let i = 1; i <= 10; i++){
+  console.log(i)
+}
+//2.-Números impares: Escribe un bucle while que imprima todos los números impares entre 1 y 50.
+let j=1;
+while (j <= 50){
+  if (j % 2 !== 0){
+    console.log(j);   
+  }
+  j++;
+}
+
+//3.-Cuenta regresiva: Crea un bucle for que empiece en 20 y llegue a 0, mostrando solo los múltiplos de 3.
+for (let m = 20; m >= 0; m--) {
+  if (m % 3 === 0) {
+    console.log(m);
+  }
+}
+
+
+//4.-Suma de enteros: Usa un bucle for para sumar los números del 1 al 100 y mostrar el resultado total.
+let suma=0;
+for (let e = 1; e <=100; e++){
+  suma += e
+}
+console.log(suma)
+
+//5.-Potencias de 2: Escribe un bucle while que imprima todas las potencias de 2 menores o iguales a 1024.
+let pot = 1
+while (pot<=1024){
+  console.log(pot);
+  pot *=2 
+}
+  
+//6.-Tabla de multiplicar: Usa un bucle for para mostrar la tabla del 7, del 1 al 10.
+let mul = 7
+for (let n = 1; n <= 10; n++){
+  console.log(mul * n);
+}
+
+//7.-Contador de letras: Dada una cadena fija, recórrela con un for y cuenta cuántas veces aparece la letra “a”.
+let texto = "base environment for this chapter";
+let contador = 0;
+
+for (let i = 0; i < texto.length; i++) {
+  if (texto[i] === "a") {
+    contador++;
+  }
+}
+
+console.log(contador);
+
+//8.-Triángulo de caracteres: Con un bucle for, imprime una figura de este tipo:
+
+//#
+//##
+//###
+//####
+//#####
+
+let filas = 5;
+
+for (let i = 1; i <= filas; i++) {
+  let fila = "";
+  for (let j = 0; j < i; j++) {
+    fila += "#";
+  }
+  console.log(fila);
+}
+
+//9.-Números saltados: Usa un bucle for que imprima los números del 1 al 50, pero salte (con continue) los divisibles por 5.
+
+//10.-Acumulador hasta cierto valor: Usa un while que vaya sumando números consecutivos hasta que la suma total sea mayor a 1000, y muestra cuántos números fueron sumados.
