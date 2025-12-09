@@ -56,3 +56,74 @@ while(user !== secreto){
   user = Number(prompt("Intenta de nuevo:")); 
 }
 alert ("Correcto");
+
+/*## 📊 *EJERCICIO 1: GENERADOR DE TABLAS DE MULTIPLICAR*
+
+### *Enunciado:*
+Escribe un programa en JavaScript que muestre *todas las tablas de multiplicar del 1 al 10, cada una en su propia sección. El programa debe usar **dos bucles for anidados* (uno dentro del otro).
+
+### *Cómo debe verse el resultado:*
+
+=== Tabla del 1 ===
+1 × 1 = 1
+1 × 2 = 2
+1 × 3 = 3
+1 × 4 = 4
+1 × 5 = 5
+1 × 6 = 6
+1 × 7 = 7
+1 × 8 = 8
+1 × 9 = 9
+1 × 10 = 10
+
+=== Tabla del 2 ===
+2 × 1 = 2
+2 × 2 = 4
+2 × 3 = 6
+... (y así sucesivamente)
+
+
+*Requisitos:*
+- Usar exactamente 2 bucles for anidados
+- Mostrar todas las tablas del 1 al 10
+- Cada tabla debe tener un título claro
+- Usar console.log() para mostrar los resultados*/
+
+for (let i=1; i<=10; i++){
+  console.log(`1 x ${i} = ${1*i}`);
+}
+
+for (let i=1; i<=10; i++){
+  console.log(`2 x ${i} = ${2*i}`);
+}
+
+/*## 📅 *EJERCICIO 2: CALENDARIO SEMANAL SIMPLE*
+
+### *Enunciado:*
+Crea un programa que organice los días del mes (del 1 al 31) en semanas de 7 días cada una. Debes usar *dos bucles for anidados*.
+
+### *Cómo debe verse el resultado:*
+
+Semana 1:  1  2  3  4  5  6  7
+Semana 2:  8  9 10 11 12 13 14
+Semana 3: 15 16 17 18 19 20 21
+Semana 4: 22 23 24 25 26 27 28
+Semana 5: 29 30 31
+
+
+*Requisitos:*
+- Mostrar 5 semanas máximo (para 31 días)
+- Cada semana debe tener su número
+- Los días deben alinearse en columnas
+- Considerar que la última semana puede tener menos de 7 días*/
+
+let dia_actual = 1;
+for (let semana = 1; semana <= 5; semana++) {
+  let texto = `Semana ${semana}: `;
+  for (let dia = 1; dia <= 7; dia++) {
+    if (dia_actual > 31) break;
+    texto += dia_actual + " ";
+    dia_actual++;
+  }
+  console.log(texto);
+}

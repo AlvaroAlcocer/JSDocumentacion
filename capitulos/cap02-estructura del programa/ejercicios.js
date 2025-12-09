@@ -158,4 +158,21 @@ for (let i = 1; i <= filas; i++) {
 
 //9.-Números saltados: Usa un bucle for que imprima los números del 1 al 50, pero salte (con continue) los divisibles por 5.
 
+for (let i = 1; i <= 50; i++) {
+  if (i % 5 === 0) {
+    continue;
+  }
+  console.log(i);
+}
+
 //10.-Acumulador hasta cierto valor: Usa un while que vaya sumando números consecutivos hasta que la suma total sea mayor a 1000, y muestra cuántos números fueron sumados.
+
+let sumaTotal = 0;
+let contadorNumeros = 0;
+let numero = 1;
+while (sumaTotal <= 1000) {
+  sumaTotal += numero;
+  contadorNumeros++;
+  numero++;
+}
+console.log(`Se sumaron ${contadorNumeros} números.`);
