@@ -123,5 +123,18 @@ function contarBase(texto, caracter) {
 console.log(contarBase("BBBBC", "B"));
 console.log(contarBase("banana", "a"));
 
+function multiplicarNumero(digito) {
+    return (numero) => {
+        return numero * digito;
+    }
+}
+let multiplicarPor10 = multiplicarNumero(10);
+console.log(multiplicarPor10(3))
+console.log(multiplicarPor10(5))
+console.log(multiplicarPor10(89))
+
+
+console.log(multiplicarNumero(5)(9))
+
 
 
